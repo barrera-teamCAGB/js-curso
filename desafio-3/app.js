@@ -66,3 +66,13 @@ function convertirDolaresAPesoMX(dolares) {
     console.log (`el perimetro es ${perimetro} o con la segunda formula es ${permitro2daFormula} y el area es ${area}`);
   }
   areaYperimetroCircular(10);
+
+  
+  // Desafio 6: Crea una función que muestre en pantalla la tabla de multiplicar de un número dado como parámetro.
+  function tablaMultiplicacion(numero) {
+    // iniciamos en cero
+    for (i = 0; i <= 10; i++) {
+        console.log(`${i} x ${numero} = ${i*numero}`)
+    }
+  }
+  tablaMultiplicacion(2);
