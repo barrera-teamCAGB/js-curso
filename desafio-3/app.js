@@ -29,3 +29,16 @@ let resultadoNumFactorial = valorFactorial(3);
 console.log(`el valor del factorial del numero es: ${resultadoNumFactorial} `);
 
 
+// Desafio 3: Crea una función que convierta un valor en dólares, pasado como parámetro, y devuelva el valor equivalente en reales(moneda brasileña,si deseas puedes hacerlo con el valor del dólar en tu país). Para esto, considera la cotización del dólar igual a R$4,80.
+
+function convertirDolaresAPesoMX(dolares) {
+    var cotizacionDolar = 0.058;
+    var pesoMX = dolares / cotizacionDolar;
+    return pesoMX;
+  }
+  // Ejemplo de uso
+  let cantidadDolar = 50;
+  let cantidadPesoMX = convertirDolaresAPesoMX(cantidadDolar);
+  console.log(`$${cantidadDolar} dólares son $${cantidadPesoMX} pesos mexicanos`);
+  
+  
