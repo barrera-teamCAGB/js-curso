@@ -54,3 +54,15 @@ function convertirDolaresAPesoMX(dolares) {
   let altura = 20;
   areaYperimetro(base,altura);
   
+
+  // Desafio 5: Crea una función que muestre en pantalla el área y el perímetro de una sala circular, utilizando su radio que se proporcionará como parámetro. Considera Pi = 3,14.
+
+  function areaYperimetroCircular(radio) {
+    var pi = 3.14;
+    var diametro = 2 * radio;
+    var perimetro = pi * diametro;
+    var permitro2daFormula = 2 * pi * radio;
+    var area = pi * (radio**2);
+    console.log (`el perimetro es ${perimetro} o con la segunda formula es ${permitro2daFormula} y el area es ${area}`);
+  }
+  areaYperimetroCircular(10);
