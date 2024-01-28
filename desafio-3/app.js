@@ -41,4 +41,16 @@ function convertirDolaresAPesoMX(dolares) {
   let cantidadPesoMX = convertirDolaresAPesoMX(cantidadDolar);
   console.log(`$${cantidadDolar} dólares son $${cantidadPesoMX} pesos mexicanos`);
   
+  // Desafio 4: Crea una función que muestre en pantalla el área y el perímetro de una sala rectangular, utilizando la altura y la anchura que se proporcionarán como parámetros.
+
+  function areaYperimetro(base, altura) {
+    var area = base * altura;
+    var perimetro = 2 * (base + altura);
+    console.log(`el area de la sala es: ${area} y
+                el perimetro de la sala es: ${perimetro}`);
+  }
+
+  let base = 30;
+  let altura = 20;
+  areaYperimetro(base,altura);
   
