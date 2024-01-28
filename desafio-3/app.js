@@ -14,3 +14,18 @@ function calcularIMC(altura, peso) {
 let resultadpIMC = calcularIMC(1.65, 68);
 console.log(`tu Indice de Masa Corporal es ${resultadpIMC} `);
 
+
+// Desafio 2: Crea una función que calcule el valor del factorial de un número pasado como parámetro.
+
+function valorFactorial(numero){
+    if (numero === 0 || numero === 1) {
+        return 1;
+      } else {
+        return numero * valorFactorial(numero - 1);
+      }
+}
+
+let resultadoNumFactorial = valorFactorial(3);
+console.log(`el valor del factorial del numero es: ${resultadoNumFactorial} `);
+
+
