@@ -16,7 +16,24 @@ lenguagesDeProgramacion.push('Java', 'Ruby', 'GoLang');
 
 // Desafio 4: Crea una función que muestre en la consola todos los elementos de la lista "lenguagesDeProgramacion.
 function muestraLista() {
+    console.log(`El total de elementos en la lista es de: ${totalElementosEnLaLista}`);
     console.log(`Los elementos de la lista son: ${lenguagesDeProgramacion}`);
 }
 
 muestraLista();
+
+// Desafio 5: Crea una función que muestre en la consola todos los elementos de la lista "lenguagesDeProgramacion en orden inverso. 
+// aqui utilizaremos la forma manual y la funcion ya creada de los array incluida en js que es .reverse();
+
+function muestraInvertido() {
+    let totalElementosEnLaLista = lenguagesDeProgramacion.length - 1;
+    console.log(`Desplegando la informacion del ultimo al primero:`);
+    for (let i = totalElementosEnLaLista; i >= 0; i--) {
+        console.log(`${lenguagesDeProgramacion[i]}`);
+        
+    }
+    // utilizando la funcion reverse quedaria
+    console.log(lenguagesDeProgramacion.reverse());
+}
+
+muestraInvertido();
