@@ -13,3 +13,10 @@ let lenguagesDeProgramacion = ['JavaScript', 'C', 'C++', 'Kotlin', 'Python'];
 // Desafio 3: Agrega a la lista "lenguagesDeProgramacion los siguientes elementos: 'Java', 'Ruby' y 'GoLang'.
 // se puede hacer un push para cada uno o todos en una sola linea
 lenguagesDeProgramacion.push('Java', 'Ruby', 'GoLang');
+
+// Desafio 4: Crea una función que muestre en la consola todos los elementos de la lista "lenguagesDeProgramacion.
+function muestraLista() {
+    console.log(`Los elementos de la lista son: ${lenguagesDeProgramacion}`);
+}
+
+muestraLista();
