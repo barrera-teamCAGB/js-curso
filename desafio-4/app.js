@@ -157,3 +157,15 @@ function suma2Listas(lista1, lista2, longitudLista) {
     console.log(`lista nueva con la suma ${nuevaLista}`);
 }
 suma2Listas(lista1,lista2);
+
+// Desafio 11: Crea una función que reciba una lista de números y devuelva una nueva lista con el cuadrado de cada número.
+function listaAlCuadrado(lista) {
+    for (let i = 0; i < lista.length; i++) {
+        resulCuadrado = lista[i]*lista[i];
+        nuevaListaAlCuadrado.push(resulCuadrado);
+    }
+    console.log(nuevaListaAlCuadrado);
+}
+let listaACalcularCuadrado = [3,6,9,10];
+let nuevaListaAlCuadrado = [];
+listaAlCuadrado(listaACalcularCuadrado);
