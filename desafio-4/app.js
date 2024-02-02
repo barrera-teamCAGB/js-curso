@@ -138,3 +138,22 @@ while (idx != -1) {
 }
 console.log(indices);
 // [0, 2, 4]
+
+// Desafio 10: Crea una función que reciba dos listas de números del mismo tamaño y devuelva una nueva lista con la suma de los elementos uno a uno.
+let lista1 = [3,6,9];
+let lista2 = [2,4,6];
+// aqui faltaria una funcion que comparara las 2 listas y que sean del mismo tamaña de lo contrario no se realiza la operacion
+let longitudLista = lista1.length;
+let nuevaLista = [];
+function suma2Listas(lista1, lista2, longitudLista) {
+    for (let i = 0; i < longitudLista; i++) {
+        let sumandoListas = 0;
+        //console.log(`recorriendo la primera lista ${lista1[i]}`) ;
+        //console.log(`recorriendo la segunda lista ${lista2[i]}`) ;
+        sumandoListas = lista1[i] + lista2[i];
+        nuevaLista.push(sumandoListas);
+        console.log(`suma de:${lista1[i]} + ${lista2[i]} = ${sumandoListas}`) ;
+    }
+    console.log(`lista nueva con la suma ${nuevaLista}`);
+}
+suma2Listas(lista1,lista2);
