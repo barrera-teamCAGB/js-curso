@@ -101,3 +101,15 @@ function numeroMayorYMenor(lista) {
 }
 
 numeroMayorYMenor(listaNumeros);
+
+// Desafio 8: Crea una función que devuelva la suma de todos los elementos en una lista.
+let numeroAsumar = [8, 5, 14, 41];
+
+function sumaNumeros(lista) {
+    let sumatoria = 0
+    for (let i = 0; i < lista.length; i++) {
+        sumatoria += lista[i];
+    }
+    return sumatoria;
+}
+let resultado = sumaNumeros(numeroAsumar);
