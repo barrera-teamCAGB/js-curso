@@ -113,3 +113,28 @@ function sumaNumeros(lista) {
     return sumatoria;
 }
 let resultado = sumaNumeros(numeroAsumar);
+
+// Desafio 9: Crea una función que devuelva la posición en la lista donde se encuentra un elemento pasado como parámetro, o -1 si no existe en la lista.
+function posicion(lista, numero) { 
+    for (let i = 0; i < lista.length; i++) {
+        if (lista[i] === numero) {
+          return i; // Retorna el índice del elemento encontrado
+        }
+    }
+    return -1; // Retorna -1 si el elemento no se encuentra en la lista
+}
+let listaNumeros = [3, 22, 8, 5, 14, 41];
+let numAbuscar = 5;
+posicion(listaNumeros, numAbuscar);
+
+ // esta solucion se encontro en mdn 
+ var indices = [];
+var array = ["a", "b", "a", "c", "a", "d"];
+var element = "a";
+var idx = array.indexOf(element);
+while (idx != -1) {
+  indices.push(idx);
+  idx = array.indexOf(element, idx + 1);
+}
+console.log(indices);
+// [0, 2, 4]
