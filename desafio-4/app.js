@@ -37,3 +37,20 @@ function muestraInvertido() {
 }
 
 muestraInvertido();
+
+// Desafio 6: Crea una función que calcule el promedio de los elementos en una lista de números.
+// hay una abreviacion para recorrer toda la lista y es con un for each en lugar de colocar todo un for
+function promedioNumeros() {
+    let sumatoria = 0;
+    let promedio = 0;
+    let listaNumeros = [8, 1, 1, 1];
+    let totalElementos = listaNumeros.length;
+    
+        for (let i = 0; i < totalElementos; i++) {
+           sumatoria = listaNumeros[i] + sumatoria;
+            console.log(`La suma es: ${sumatoria}`);  
+        }
+        promedio = sumatoria/totalElementos;
+        console.log(`El promedio de todos los numeros es: ${promedio}`);  
+    }
+    promedioNumeros();
